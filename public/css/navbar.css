@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&family=Roboto:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300&family=Montserrat&family=Roboto:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Fraunces:ital,opsz,wght@1,9..144,300&family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: antiquewhite; */
+    
+}
+
+html {
+    font-size: 10px;
+    font-family: 'montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------------Nav Bar--------------------------------------------  */
+
+.apart-picture img{
+    align-items: left;
+    justify-content: left;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    height: 6rem;
+    width: 6rem;
+}
+
+
+.apart-picture{
+    display: flex;
+    color: white;
+    
+}
+
+.navbar-brand{
+    font-size: 3rem;
+    align-items: center;
+    margin-left: 35%;
+}
+.navbar-brand img{
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    margin-right: 12%;
+}
+.offcanvas-body ul li a{
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.offcanvas-body ul li a:hover{
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+nav{
+    position: fixed;
+    height: 11vh;
+    width: 100%;
+    /* width: 38.9rem; */
+}
+
+.navbar-toggler{
+    height: 50%;
+    width: 50%;
+}
+
+.navhead h1{
+    color: white;
+    margin-top: 3.7rem;
+    font-size: 1.3rem;
+    padding-right: 18rem;
+    padding-left: 1.2rem;
+}
+.navhead h1:hover{
+    color: gray;
+}
+.navhead a{
+    text-decoration: none;
+}
+.navhead h3{
+    color: white;
+    margin-top: .4rem;
+    padding-right: 4rem;
+}
+
+#nav-bar{
+    left: 0;
+    top: 0px;
+    min-width: 145rem;
+    background-color: black;
+    position: fixed;
+    z-index: 106;
+    height: 7rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30rem;
+}
+.nav-list{
+    font-size: 1.9rem;
+    color: black;
+    text-decoration: none;
+    display: flex;
+}
+.nav-list ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list ul li{
+    padding: 3rem;
+}
+
+.nav-list ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list ul li a:hover{
+    color: gray;
+    border-bottom: 2px solid white;
+
+}
+
+
+
+@media only screen and (max-width: 620px) and (min-width: 300px){
+    nav{
+        position: fixed;
+        height: 8vh;
+        width: 38.9rem;
+    }
+    .navbar-brand{
+        font-size: 2rem;
+        font-family: 'montserrat', sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.collapsible .content {
+  display: none;
+}
+
+.collapsible .header {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ddd;
+}
+.collapsible .content {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.collapsible .header.collapsed {
+  border-bottom: 1px solid #aaa;
+}
+
+.collapsible .header:before {
+  content: "+";
+  float: left;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.collapsible .header.collapsed:before {
+  content: "-";
+}
+
+</style>
+<body>
+    
+<div class="collapsible">
+  <div class="header">Click to open/close</div>
+  <div class="content">
+    <p>Collapsible content goes here.</p>
+  </div>
+</div>
+
+    <script>
+const collapsibles = document.querySelectorAll('.collapsible');
+
+collapsibles.forEach(collapsible => {
+  const header = collapsible.querySelector('.header');
+  const content = collapsible.querySelector('.content');
+  
+  // Initially hide the content section
+  content.style.display = 'none';
+  
+  // Add a click event listener to the header
+  header.addEventListener('click', () => {
+    // Toggle the content section display property
+    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    
+    // Toggle the "collapsed" class on the header
+    header.classList.toggle('collapsed');
+  });
+  
+  // Add the "collapsed" class to the header by default
+  header.classList.add('collapsed');
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+#footer{
+    font-family: Galaxie, Lustria, "Times New Roman", serif;
+    padding-top: 6rem;
+    display: flex;
+    background-color: rgb(9, 8, 8);
+    color: white;
+    width: 100%;
+    height: 100%;
+    /* padding-left: 8rem; */
+}
+.footer-rowie{
+    display: flex;
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer-left{
+    width: 50%;
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+}
+.footer-contact h1{
+    font-size: 3rem;
+    /* padd */
+}
+.footer-contact-info{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+#footer-left{
+    font-size: 2rem;
+    font-family: Galaxie, Lustria, "Times New Roman", serif;
+    display: flex;
+}
+
+
+.footer-left-2{
+    padding-left: 10rem;
+    padding-right: 7rem;
+}
+.footer-left-head h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding-left: 1.6rem;
+}
+.footer-left-head ul{
+    text-decoration: none;
+}
+.footer-left-head ul li a{
+    text-decoration: none;
+}
+.footer-content ul li{
+    /* font-family: 'Libre Baskerville', 'Helvetica Neue', Arial,Verdana,sans-serif; */
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding-top: 1rem;
+    padding-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.footer-content ul li:hover{
+    color: grey;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+}
+.footer-mail p:hover{
+    color: white;
+}
+
+.footer-social-follow{
+    padding-left: 8rem;
+}
+.footer-social-follow h1{
+    font-size: 3rem;
+}
+.footer-social-icon{
+    /* flex-direction: column; */
+    cursor: pointer;
+    margin-bottom: 5.7rem;
+    padding-top: 1.5rem;
+    /* padding-left: 32%; */
+    /* margin-left: 62%; */
+}
+.footer-social-icon img{
+    height: 3rem;
+    width: 3rem;
+    color: white;
+    background-color: white;
+    border-radius: 50%;
+    padding: .2rem;
+    margin: 3px;
+}
+.footer-social-icon .fb img:hover{
+    background-color: #00acdb;
+}
+.footer-social-icon .insta img:hover{
+    background-color: rgb(212, 40, 186);
+}
+.footer-social-icon .wa img:hover{
+    background-color: #00dba5;
+}
+.footer-social-icon .mail img:hover{
+    background-color: linear-gradient(yellow orange);
+}
+
+/* ---------------------------------------Real Footer-------------------------------------------- */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: pink;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    display: flex;
+    font-size: 1.4rem;
+    color: black;
+    padding-top: 7px;
+
+}
+footer a{
+    font-style: none;
+    text-decoration: none;
+}
+/* End of Footer section */
+
+/* SCROLL TO TOP  */
+#myBtn {
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: transparent; 
+    color: white; 
+    cursor: pointer; 
+    border-radius: 50%; 
+
+  }
+  .btnn img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    opacity: .3;
+  }
+
+  #myBtn:hover {
+    background-color: #555; 
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 620px) and (min-width: 300px){
+  #footer{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;    
+}
+
+#footer-left{
+    padding-left: 2.5rem;
+}
+.footer-contact{
+    padding-left: 2.5rem;
+}
+.footer-social-follow{
+    padding-left: 3rem;
+    display: flex;
+}
+.footer-social-follow-heading{
+    display: none;
+}
+.footer-social-icon{
+    display: flex;
+    padding-bottom: 5rem;
+}
+.footer-social-icon img{
+    height: 2rem;
+    width: 2rem;
+}
+#footer h1{
+    font-size: 2rem;
+}
+#footer #footer-left h1{   
+    padding-left: 1.8rem;
+}
+#footer ul li{
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.55rem;
+}
+.footer-contact-info{
+    font-size: 1.3rem;
+}
+#myBtn {
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: transparent; 
+    color: white; 
+    cursor: pointer; 
+    border-radius: 50%; 
+   /* padding-right: 32rem; */
+   padding-right: 44%;
+  }
+  .btnn img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    opacity: .3;
+  }
+
+  #myBtn:hover {
+    background-color: #555; 
+  }
+
+  .more .btnnn{
+    padding-left: 60%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) and (min-width: 620px){
+
+    
+    #footer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;    
+    }
+
+    #footer-left{
+        padding-left: 11rem;
+        align-items: left;
+    }
+    .footer-left-2{
+        padding-left: 17rem;
+    }
+    #footer-right{
+        padding-left: 12rem;
+    }
+    .footer-social-follow{
+        padding-left: 5rem;
+        font-size: 2.8;
+    }
+    .footer-contact{
+        margin-right: 2rem;
+    }
+    .footer-contact h1{   
+        padding-left: 1px;
+        font-size: 2.8rem;
+    }
+
+}

@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apart-picture{
+    display: flex;
+    color: white;
+}
+
+.apart-picture img{
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+}
+
+
+
+#bg-coll{
+    background: linear-gradient(#20c997,#c76094);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+.collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 2rem;
+    border-radius: 6px;
+}
+button{
+    /* color: none; */
+    z-index: -100;
+}
+
+.collapsible .content{
+    display: none;
+}
+
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    /* color: transparent; */
+    float: right;
+    margin-left: 5px;
+    border: 1px solid black;
+    /* border-bottom: 0px solid white; */
+}
+
+.click:after {
+    content: "\2796"; 
+    
+  }
+  /* .active, .collapsible:hover {
+      background-color: rgb(97, 71, 74);
+    }
+    */
+    #packages{
+        width: 80%;
+        margin-left: 2rem;
+        /* margin-bottom: 4rem; */
+    }
+
+  #packages .content{
+    width: 80%;
+    border: 1px solid black;
+    border-top: 1px solid white;
+    border-radius: 6px;
+}
+
+ /* .content4::after{
+    content: "";
+    position: absolute;
+    background: url('cake3.jpg') no-repeat center center/cover;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} */
+
+/* #packages::after{
+    content: "";
+    background: url('../images/cake3.jpg') no-repeat left/cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} */
+  #packages .content li{
+    font-family: Galaxie, Lustria, "Times New Roman", serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+#packages .content p{
+      font-family: 'Caveat', cursive;
+
+
+  }
+#packages button{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: Galaxie, Lustria, "Times New Roman", serif;
+    font-weight: 1000;
+    /* padding-left: 4rem; */
+}
+
+
+
+.reveal{
+    position: relative;
+    transform: translateY(10px);
+    opacity: 0.3;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/*SCROLL TO TOP */
+
+#myBtn {
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: transparent; 
+    color: white; 
+    cursor: pointer; 
+    border-radius: 50%; 
+
+  }
+  .btnn img{
+    height: 2.3rem;
+    width: 2.3rem;
+    border-radius: 50%;
+    opacity: .3;
+  }
+
+  #myBtn:hover {
+    background-color: #555; 
+  }
+
+  /* END OF SCROLL TO TOP */
